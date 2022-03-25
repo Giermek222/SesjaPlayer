@@ -1,14 +1,15 @@
-﻿<Window x:Class="SesjaPlayer.MainWindow"
+﻿<Window x:Class="SesjaPlayer.ImageWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SesjaPlayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+        Title="ImageWindow" 
+        WindowState="Maximized" ResizeMode="NoResize"
+        WindowStyle="None"
+        >
     <Grid>
-        <ListView x:Name="Backgrounds" SelectionChanged="Backgrounds_SelectionChanged">
-
-        </ListView>
+        
     </Grid>
 </Window>

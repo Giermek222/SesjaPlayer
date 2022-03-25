@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SesjaPlayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing"
+        >
     <Grid>
-        <ListView x:Name="Backgrounds" SelectionChanged="Backgrounds_SelectionChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="Backgrounds" SelectionChanged="Backgrounds_SelectionChanged" >
+
+        </ListView>
+        <ListView x:Name="Npc_list" SelectionChanged="Npc_list_SelectionChanged" Grid.Column="1">
 
         </ListView>
     </Grid>
